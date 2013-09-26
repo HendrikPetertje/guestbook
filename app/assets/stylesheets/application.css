@@ -51,6 +51,10 @@ textarea {
 	margin: 0 auto;
 }
 
+.indextable {
+	width: 960px;
+}
+
 /* #Tablet (portrait)
 ======================= */
 
@@ -69,6 +73,10 @@ textarea {
 
 	.header-img {
 		width: 750px
+	}
+
+	.indextable {
+		width: 750px;
 	}
 }
 
@@ -90,6 +98,10 @@ textarea {
 	.header-img {
 		width: 470px
 	}
+
+	.indextable {
+		width: 470px;
+	}
 }
 
 /* #Mobile (portrait)
@@ -108,5 +120,8 @@ textarea {
 	}
 	.header-img {
 		width: 290px
+	}
+	.indextable {
+		width: 290px;
 	}
 }
