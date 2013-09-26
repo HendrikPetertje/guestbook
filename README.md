@@ -20,4 +20,4 @@ dit gastenboek is gemaakt voor huwlijken. het gasteboek kan op allerlei apparate
 U kunt de lopende applicatie bezichtigen op [deze site][2]
 
   [1]: http://railsinstaller.org/en
-  [2]: http://still-peak-9135.herokuapp.com/
+  [2]: http://picoguestbook.herokuapp.com/
