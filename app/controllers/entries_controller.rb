@@ -5,16 +5,18 @@ class EntriesController < ApplicationController
   # GET /entries.json
   def index
     @entries = Entry.all
+    @user = User.find(1).name
   end
 
   # GET /entries/1
   # GET /entries/1.json
-  def show
-  end
+  # def show
+  # end
 
   # GET /entries/new
   def new
     @entry = Entry.new
+    @user = User.find(1).name
   end
 
   # GET /entries/1/edit

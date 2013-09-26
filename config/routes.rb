@@ -1,5 +1,7 @@
 Guestbook::Application.routes.draw do
-  resources :entries
+  resources :users, only: [:index, :update]
+
+  resources :entries, only: [:inex, :new, :edit, :create, :update, :destroy ]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
