@@ -2,33 +2,14 @@
   Hieronder zie je een overzicht van iedereen die een bericht heeft achtergelaten voor <%= @user %>. Wil je <%= @user %> persoonlijk feliciteren? klik dan <%= link_to 'hier', new_entry_path %>.
 </div>
 
-<table class="indextable">
-  <thead>
-    <tr>
-      <th>Naam</th>
-      <th>Adres</th>
-      <th>Woonplaats</th>
-      <th>Postcode</th>
-      <th>Bericht</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<% @entries.each do |entry| %>
 
-  <tbody>
-    <% @entries.each do |entry| %>
-      <tr>
-        <td><%= entry.name %></td>
-        <td><%= entry.adres %></td>
-        <td><%= entry.town %></td>
-        <td><%= entry.postbox %></td>
-        <td><%= entry.message %></td>
-        <td><%= link_to 'Aanpassen', edit_entry_path(entry) %></td>
-        <td><%= link_to 'Verwijderen', entry, method: :delete, data: { confirm: 'Weet je het zeker?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<article class="index-article">
+  <h1><%= entry.name %></h1>
+  <%= entry.adres %><br>
+  <%= entry.postbox %> <%= entry.town %> <br><br>
+  <%= entry.message %>
+  <div class="article-footer"><%= link_to 'Aanpassen', edit_entry_path(entry) %> <%= link_to 'Verwijderen', entry, method: :delete, data: { confirm: 'Weet je het zeker?' } %></div>
+</article>
+<% end %>
+<div class="cleardiv"></div>

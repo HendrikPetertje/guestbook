@@ -16,6 +16,13 @@
  	margin: 0;
  	padding: 0;
  	background: url(/assets/noise.png) repeat;
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	font-size: 11pt;
+ 	color: #222;
+ }
+
+ .cleardiv {
+ 	clear:both;
  }
 
  .introbubble {
@@ -55,6 +62,34 @@ textarea {
 	width: 960px;
 }
 
+.index-article {
+	float: left;
+	width: 200px;
+	padding: 10px;
+	margin: 10px;
+	background: #9E9E9E;
+}
+
+.index-article h1 {
+	margin: 0 0 3px 0;
+	padding:0;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.index-article a {
+	color: #FFF;
+}
+
+.index-article a:hover {
+	color: #DDD;
+	text-decoration: none;
+}
+
+.article-footer {
+	padding:10px 0 0 0;
+}
+
 /* #Tablet (portrait)
 ======================= */
 
@@ -77,6 +112,10 @@ textarea {
 
 	.indextable {
 		width: 750px;
+	}
+
+	.index-article {
+		width: 210px
 	}
 }
 
@@ -102,6 +141,10 @@ textarea {
 	.indextable {
 		width: 470px;
 	}
+
+	.index-article {
+		width:195px;
+	}
 }
 
 /* #Mobile (portrait)
@@ -123,5 +166,9 @@ textarea {
 	}
 	.indextable {
 		width: 290px;
+	}
+
+	.index-article {
+		width: 250px;
 	}
 }
