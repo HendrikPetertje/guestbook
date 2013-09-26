@@ -21,6 +21,15 @@
  	color: #222;
  }
 
+ a {
+ 	color: #000
+ }
+
+a:hover {
+	color: #999;
+	text-decoration: none;
+} 
+
  .cleardiv {
  	clear:both;
  }
