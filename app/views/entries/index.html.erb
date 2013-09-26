@@ -1,5 +1,6 @@
 <div class="introbubble">
-  Hieronder zie je een overzicht van iedereen die een bericht heeft achtergelaten voor <%= @user %>. Wil je <%= @user %> persoonlijk feliciteren? klik dan <%= link_to 'hier', new_entry_path %>.
+  Hieronder zie je een overzicht van iedereen die een bericht heeft achtergelaten voor <%= @user %>. <br>
+  Wil je <%= @user %> persoonlijk feliciteren? klik dan <%= link_to 'hier', new_entry_path %>.
 </div>
 
 <% @entries.each do |entry| %>
