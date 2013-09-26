@@ -11,3 +11,102 @@
  *= require_self
  *= require_tree .
  */
+
+ html, body {
+ 	margin: 0;
+ 	padding: 0;
+ 	background: url(/noise.png) repeat;
+ }
+
+ .introbubble {
+ 	margin: 20px 0;
+ 	font-weight: bold;
+ }
+
+.container {
+	width: 960px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+input {
+	width: 960px;
+}
+
+textarea {
+	width: 960px;
+	height: 200px;
+}
+
+.submit-button {
+	width: 130px;
+	height: 30px;
+	background: url(/button.png) no-repeat;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.form-submitcontainer {
+	width: 130px;
+	margin: 0 auto;
+}
+
+/* #Tablet (portrait)
+======================= */
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 750px;
+	}
+
+	input {
+		width: 750px;
+	}
+
+	textarea {
+		width: 750px;
+	}
+
+	.header-img {
+		width: 750px
+	}
+}
+
+
+/* #Mobile (Landscape)
+======================= */
+ @media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 470px;
+	}
+
+	input {
+		width: 470px;
+	}
+
+	textarea {
+		width: 470px;
+	}
+	.header-img {
+		width: 470px
+	}
+}
+
+/* #Mobile (portrait)
+======================= */
+ @media only screen and (min-width: 300px) and (max-width: 479px) {
+ 	.container {
+		width: 290px;
+	}
+
+	input {
+		width: 290px;
+	}
+
+	textarea {
+		width: 290px;
+	}
+	.header-img {
+		width: 290px
+	}
+}

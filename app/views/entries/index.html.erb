@@ -1,13 +1,15 @@
-<h1>Listing entries</h1>
+<div class="introbubble">
+  Hieronder zie je een overzicht van iedereen die een bericht heeft achtergelaten voor Henk en Anja. Wil je Henk en anja persoonlijk feliciteren? klik dan <%= link_to 'hier', new_entry_path %>.
+</div>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>Naam</th>
       <th>Adres</th>
-      <th>Town</th>
-      <th>Postbox</th>
-      <th>Message</th>
+      <th>Woonplaats</th>
+      <th>Postcode</th>
+      <th>Bericht</th>
       <th></th>
       <th></th>
       <th></th>
@@ -22,14 +24,11 @@
         <td><%= entry.town %></td>
         <td><%= entry.postbox %></td>
         <td><%= entry.message %></td>
-        <td><%= link_to 'Show', entry %></td>
-        <td><%= link_to 'Edit', edit_entry_path(entry) %></td>
-        <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Aanpassen', edit_entry_path(entry) %></td>
+        <td><%= link_to 'Verwijderen', entry, method: :delete, data: { confirm: 'Weet je het zeker?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Entry', new_entry_path %>

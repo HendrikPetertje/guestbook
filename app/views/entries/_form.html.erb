@@ -1,7 +1,7 @@
 <%= form_for(@entry) do |f| %>
   <% if @entry.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
+      <h2><%= pluralize(@entry.errors.count, "error") %> Je berichtje kan niet worden opgeslagen omdat::</h2>
 
       <ul>
       <% @entry.errors.full_messages.each do |msg| %>
@@ -12,26 +12,26 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    Naam:<br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= f.label :adres %><br>
+    Adres:<br>
     <%= f.text_field :adres %>
   </div>
   <div class="field">
-    <%= f.label :town %><br>
+    Woonplaats:<br>
     <%= f.text_field :town %>
   </div>
   <div class="field">
-    <%= f.label :postbox %><br>
+    Postcode:<br>
     <%= f.text_field :postbox %>
   </div>
   <div class="field">
-    <%= f.label :message %><br>
+    Bericht:<br>
     <%= f.text_area :message %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="actions form-submitcontainer">
+    <%= f.submit "Opslaan", class: "submit-button"%>
   </div>
 <% end %>
