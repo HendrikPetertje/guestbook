@@ -9,3 +9,9 @@ dit gastenboek is gemaakt voor huwlijken. het gasteboek kan op allerlei apparate
  - Typ in de project map na bundle `rails s`
  - ?
  - Profit!
+
+##De website online
+
+U kunt de lopende applicatie bezichtigen op [Deze site][1]
+
+  [1]: http://still-peak-9135.herokuapp.com/
