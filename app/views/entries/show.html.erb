@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @entry.name %>
+</p>
+
+<p>
+  <strong>Adres:</strong>
+  <%= @entry.adres %>
+</p>
+
+<p>
+  <strong>Town:</strong>
+  <%= @entry.town %>
+</p>
+
+<p>
+  <strong>Postbox:</strong>
+  <%= @entry.postbox %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @entry.message %>
+</p>
+
+<%= link_to 'Edit', edit_entry_path(@entry) %> |
+<%= link_to 'Back', entries_path %>
