@@ -1,5 +1,3 @@
-hello!
-
 #Guestbook app voor huwlijken
 
 dit gastenboek is gemaakt voor huwlijken. het gasteboek kan op allerlei apparaten worden bekeken en is responsive.
