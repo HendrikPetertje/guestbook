@@ -1,4 +1,4 @@
-hello!
+Hello (three.js test)
 
 #Guestbook app voor huwlijken
 
